@@ -5,7 +5,7 @@ Répertoire des multiples mini-projets
 <p>DJ NXS</p>
 <b>INFO: Ceci est le bot de musique de la communauté NXS.</b>
 <hr>
-<p>AI-Chatbot</>
+<p>AI-Chatbot</p>
 <b>INFO: Ceci est le premier mini projet qui touche au domaine de l'AI.Elle servira a répondre au question au niveau du projet.
 <b> INFO Sup: La version ultime sera capable de tester les projet ( mini-jeu etc ) et aidera a détecter les potentiel bugs et aura aussi le mode gestion du projet.
 <b>INFO: Ce projet pourrait être au ralentie pourvue des compétences manquantes dans ce domaine.

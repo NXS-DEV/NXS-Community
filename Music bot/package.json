@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@discordjs/opus": "^0.5.3",
+    "@discordjs/rest": "^0.4.1",
+    "@discordjs/voice": "^0.9.0",
+    "discord-api-types": "^0.33.0",
+    "discord-player": "^5.2.2",
+    "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1",
+    "save-dev": "^0.0.1-security",
+    "ytdl-core": "^4.9.1"
+  },
+  "name": "dj",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

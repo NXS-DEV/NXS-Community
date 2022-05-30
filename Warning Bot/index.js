@@ -20,39 +20,6 @@ client.on('ready', () => {
     }
 });
 
-
-client.on('message', message => {
-  if (message.content === `Starting NXS SYS`) {
-     if (!message.mentions.users.size) {
-         return message.reply('Starting NXS SYS . . .');
-
-     }else {
-       return message.reply('Command not found !');
-     }
- }
- 
-});
-
-client.on('message', message => {
-  if (message.content === `Shutting down NXS SYS`) {
-     if (!message.mentions.users.size) {
-         return message.reply('NXS SYS is now shutting down . . .');
-
-     }else {
-      return message.reply('Command not found !');
-    }
- }
- 
-});
-
-client.on('message', message => {
-  if(message.content === `${prefix}` + "Eventlist") {
-    message.channel.send("Please go to #Events channel, That's were all the event will be announced.");
-  }
-
-})
-
-
 /*Greeting function */
 client.on('guildMemberAdd', member => {
 
@@ -88,67 +55,9 @@ client.on('message', message => {
         console.log(message.content);
 		message.delete();
     }
-
-    client.on('message', (message) => {
-      if (!message.content.startsWith(prefix) || message.author.bot) return;
-    
-      const args = message.content
-        .toLowerCase()
-        .slice(prefix.length)
-        .trim()
-        .split(/\s+/);
-      const [command, input] = args;
-    
-      if (command === 'clear' || command === 'c') {
-        if (!message.member.hasPermission('MANAGE_MESSAGES')) {
-          return message.channel
-            .send(
-              "You cant use this command since you're missing `manage_messages` perm",
-            );
-        }
-    
-        if (isNaN(input)) {
-          return message.channel
-            .send('Enter the amount of messages that you would like to clear')
-            .then((sent) => {
-              setTimeout(() => {
-                sent.delete();
-              }, 5000); /*2500 */
-            });
-        }
-    
-        if (Number(input) < 0) {
-          return message.channel
-            .send('Enter a positive number')
-            .then((sent) => {
-              setTimeout(() => {
-                sent.delete();
-              }, 5000); /*2500 */
-            });
-        }
-    
-        // add an extra to delete the current message too
-        const amount = Number(input) > 100
-          ? 101
-          : Number(input) + 1;
-    
-        message.channel.bulkDelete(amount, true)
-        .then((_message) => {
-          message.channel
-            // do you want to include the current message here?
-            // if not it should be ${_message.size - 1}
-            .send(`Done ! \`${_message.size}\` messages has been deleted. :broom:`)
-            .then((sent) => {
-              setTimeout(() => {
-                sent.delete();
-              }, 5000); /*2500 */
-            });
-        });
-      }
-    
      
     
     });
-})
 
 client.login(token);
+

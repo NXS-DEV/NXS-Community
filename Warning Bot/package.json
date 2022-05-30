@@ -1,0 +1,23 @@
+{
+  "name": "warning",
+  "version": "1.0.0",
+  "description": "Unique warning linked system Bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cyber",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "ascii-table": "0.0.9",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "node": "^15.4.0",
+    "node.js": "0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "keywords": []
+}
